@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="C:\GoAware\favicon_io\favicon-32x32.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoAware Platform</title>
@@ -55,25 +56,37 @@
   border-top: 1px solid #AAA;
   z-index: 1;
 }
-  
-.logo {
-   heigh
-  }
+body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
 
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
 </style>
 <body>
     <header>
         <nav>
             <ul class="tabrow">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="D:\Goaware\User Registration.html">Register</a></li>
-                <li><a href="D:\Goaware\Schemes.html">Schemes</a></li>
+                <li><a href="c:\Goaware\User Registration.html">Register</a></li>
+                <li><a href="c:\Goaware\Schemes.html">Schemes</a></li>
                 <li><a href="admin.html">Admin Panel</a></li>
+                <li><a href=""><button onclick="darkMode()">Darkmode</button></a></li>
             </ul>
-            <div style="text-align: center;" class="logo"><img src="D:\Goaware\Logo.jpg" style="height: 170px;width: 200px;" alt=""></div>
+            <div style="text-align: center;" class="logo"><img src="c:\Goaware\Logo.jpg" style="height: 170px;width: 200px;" alt=""></div>
         </nav>
     </header>
-
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
     <!-- Main Content -->
     <main>
         <section id="hero">
@@ -86,10 +99,6 @@
     </main>
 </body>
 </html>
-
-<!-- Additional Pages -->
-
-
 <!-- Dashboard Page -->
 <!DOCTYPE html>
 <html lang="en">
@@ -133,17 +142,4 @@
     <title>Admin Panel - GoAware</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!--header>
-        <nav>
-            <div class="logo">GoAware</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="admin.html">Admin Panel</a></li>
-            </ul>
-        </nav>
-    </header-->
-</body>
 </html>
