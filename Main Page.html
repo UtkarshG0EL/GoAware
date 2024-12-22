@@ -56,10 +56,23 @@
   border-top: 1px solid #AAA;
   z-index: 1;
 }
+.mode {
+            float:right;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
         .dark-mode {
             background-color: black;
             color: white;
         }
+        
 </style>
 <body>
     <div id="google_translate_element"></div>
@@ -72,7 +85,6 @@
     }
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <header>
         <nav>
             <ul class="tabrow">
@@ -80,11 +92,12 @@
                 <li><a href="c:\Goaware\User Registration.html">Register</a></li>
                 <li><a href="c:\Goaware\Schemes.html">Schemes</a></li>
                 <li><a href="admin.html">Admin Panel</a></li>
-                <li><a href=""><button onclick="darkMode()">Darkmode</button></a></li>
             </ul>
-            <div style="text-align: center;" class="logo"><img src="c:\Goaware\Logo.jpg" style="height: 170px;width: 200px;" alt=""></div>
+            <div style="text-align: center;" class="logo"><img src="C:\Goaware\Logo.jpg" style="height: 170px;width: 200px;" alt=""></div>
         </nav>
     </header>
+    </div>
+    <button onclick="darkMode()">Darkmode</button>
     <script>
         function darkMode() {
             var element = document.body;
@@ -97,7 +110,7 @@
             <div style="text-align: center;" class="hero-content">
                 <h1>Welcome to GoAware</h1>
                 <h4>A transformative platform bridging the gap between rural and urban communities and government schemes. Our website provide real-time agricultural pricing, increase awareness of government initiatives, and empower individuals with accessible, life-enhancing resources. By leveraging cutting-edge technology, GoAware fosters inclusivity, informed decision-making, and sustainable development for a brighter future.</h3>
-                <a href="register.html" class="btn">Get Started</a>
+                <a href="c:\Goaware\User Registration.html" class="btn">Get Started</a>
             </div>
         </section>
     </main>
@@ -120,12 +133,12 @@
                 <div class="section">
                     <h3>Awareness Section</h3>
                     <p>Access information about government schemes and benefits.</p>
-                    <button onclick="location.href='awareness.html'">Explore</button>
+                    <button onclick="location.href='Schemes.html'">Explore</button>
                 </div>
                 <div class="section">
                     <h3>Real-Time Prices</h3>
                     <p>Get the latest market prices for agricultural products.</p>
-                    <button onclick="location.href='prices.html'">View Prices</button>
+                    <button onclick="location.href='farmer.html'">View Prices</button>
                 </div>
             </div>
         </section>
