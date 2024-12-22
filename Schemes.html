@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            padding: 1rem;
+        }
+
+        .section-heading {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 1rem;
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem 0;
+            scrollbar-width: thin;
+            scrollbar-color: #0073e6 #f1f1f1;
+        }
+
+        .card-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .card-container::-webkit-scrollbar-thumb {
+            background-color: #0073e6;
+            border-radius: 4px;
+        }
+
+        .card-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .card {
+            min-width: 200px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h3 {
+            margin: 0 0 0.5rem;
+            color: #0073e6;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header style="font-size: 36px;">
+        Schemes
+    </header>
+
+    <div class="container">
+        <div class="section-heading">Student</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>MNREGA</h3>
+                <p>The Government of India passed the Mahatma Gandhi National Rural Employment Guarantee Act, 2005 in September, 2005. The Act gives legal guarantee of a hundred days of wage employment in a financial year to adult members of a rural household who demand employment and are willing to do unskilled manual work</p>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>This is the content of card 2.</p>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>This is the content of card 3.</p>
+            </div>
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>This is the content of card 4.</p>
+            </div>
+        </div>
+
+        <div class="section-heading">Pension</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Card A</h3>
+                <p>This is the content of card A.</p>
+            </div>
+            <div class="card">
+                <h3>Card B</h3>
+                <p>This is the content of card B.</p>
+            </div>
+            <div class="card">
+                <h3>Card C</h3>
+                <p>This is the content of card C.</p>
+            </div>
+            <div class="card">
+                <h3>Card D</h3>
+                <p>This is the content of card D.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
