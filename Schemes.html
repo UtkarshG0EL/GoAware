@@ -73,9 +73,20 @@
             font-size: 0.9rem;
             color: black;
         }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <button onclick="darkMode()">Darkmode</button>
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
     <header style="font-size: 36px;">
         Schemes
     </header>
